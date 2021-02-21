@@ -11,7 +11,6 @@ It is built on top of three big guys:
 
 * Instalação
 Windows:
-
 Instalar xamppp
 fazer downgrade do php
 https://www.devopsschool.com/blog/how-to-downgrade-php-from-8-0-0-to-7-1-32-in-xampp-8-0-0/
