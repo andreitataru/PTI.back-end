@@ -13,7 +13,12 @@ return [
         'validation_rules' => [
             'name' => 'required',
             'email' => 'required|email',
-            'password' => 'required'
+            'username' => 'required',
+            'accountType' => 'required',
+            'birthDate' => 'required',
+            'bankAccountNumber' => 'required',
+            'cellphoneNumber' => 'required',
+            'password' => 'required',
         ]
     ],
 
