@@ -19,7 +19,7 @@ Instalar composer <br />
 Criar pasta Laravel na pasta htdocs <br />
 cd C:\xampp\htdocs\Laravel <br />
 
-git clone https://github.com/andreitataru/PTI.back-end.git <br />
+git clone https://github.com/andreitataru/PTIR.back-end <br />
 fazer cd lá para dentro <br />
 composer install <br />
 composer update <br />
