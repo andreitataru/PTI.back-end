@@ -9,49 +9,49 @@ It is built on top of three big guys:
 * Laravel-CORS [barryvdh/laravel-cors](http://github.com/barryvdh/laravel-cors)
 
 
-Instalação \
-Windows: \
-Instalar xamppp \
-fazer downgrade do php \
-https://www.devopsschool.com/blog/how-to-downgrade-php-from-8-0-0-to-7-1-32-in-xampp-8-0-0/ \
+Instalação <br />
+Windows: <br />
+Instalar xamppp <br />
+fazer downgrade do php <br />
+https://www.devopsschool.com/blog/how-to-downgrade-php-from-8-0-0-to-7-1-32-in-xampp-8-0-0/ <br />
 
-Instalar composer \
-Criar pasta Laravel na pasta htdocs \
-cd C:\xampp\htdocs\Laravel \
+Instalar composer <br />
+Criar pasta Laravel na pasta htdocs <br />
+cd C:\xampp\htdocs\Laravel <br />
 
-git clone https://github.com/andreitataru/PTI.back-end.git \
-fazer cd lá para dentro \
-composer install \
-composer update \
-abrir pasta no visual studio code e alterar o ficheiro ".env.example" para ".env" \
-php artisan key:generate \
-php artisan serve \
-testar o url : http://127.0.0.1:8000/api/hello \
+git clone https://github.com/andreitataru/PTI.back-end.git <br />
+fazer cd lá para dentro <br />
+composer install <br />
+composer update <br />
+abrir pasta no visual studio code e alterar o ficheiro ".env.example" para ".env" <br />
+php artisan key:generate <br />
+php artisan serve <br />
+testar o url : http://127.0.0.1:8000/api/hello <br />
 
-aceder ao http://localhost/phpmyadmin/ e criar uma base de dados "db" \
-abrir o ficheiro .env no visual studio code e alterar os seguintes campos: \
-DB_DATABASE=db \
-DB_USERNAME=root \
-DB_PASSWORD= \
+aceder ao http://localhost/phpmyadmin/ e criar uma base de dados "db" <br />
+abrir o ficheiro .env no visual studio code e alterar os seguintes campos: <br />
+DB_DATABASE=db <br />
+DB_USERNAME=root <br />
+DB_PASSWORD= <br />
 
-aceder à pasta config abrir o ficheiro database.php \
-e colocar o "mysql" assim \     
-        'mysql' => [ \
-            'driver' => 'mysql', \
-            'host' => env('DB_HOST', '127.0.0.1'), \
-            'port' => env('DB_PORT', '3306'), \
-            'database' => env('DB_DATABASE', 'db'), \
-            'username' => env('DB_USERNAME', 'root'), \
-            'password' => env('DB_PASSWORD', ''), \
-            'charset' => 'utf8', \
-            'collation' => 'utf8_unicode_ci', \
-            'prefix' => '', \
-            'strict' => true, \
-            'engine' => null, \
-        ], \
+aceder à pasta config abrir o ficheiro database.php <br />
+e colocar o "mysql" assim <br />
+        'mysql' => [ <br />
+            'driver' => 'mysql', <br />
+            'host' => env('DB_HOST', '127.0.0.1'), <br />
+            'port' => env('DB_PORT', '3306'), <br />
+            'database' => env('DB_DATABASE', 'db'), <br />
+            'username' => env('DB_USERNAME', 'root'), <br />
+            'password' => env('DB_PASSWORD', ''), <br />
+            'charset' => 'utf8', <br />
+            'collation' => 'utf8_unicode_ci', <br />
+            'prefix' => '', <br />
+            'strict' => true, <br />
+            'engine' => null, <br />
+        ], <br />
 
-e por fim dar run a este comando que vai dar run às migrations e gerar as tabelas da base de dados: \
-php artisan migrate \
+e por fim dar run a este comando que vai dar run às migrations e gerar as tabelas da base de dados: <br />
+php artisan migrate <br />
 
-para testar a api podemos usar o programa Postman \
+para testar a api podemos usar o programa Postman <br />
 
