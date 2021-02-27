@@ -13,6 +13,12 @@ class SignUpController extends Controller
 {
     public function signUp(SignUpRequest $request, JWTAuth $JWTAuth)
     {
+        if (!($request->accountType == "Student" || $request->accountType == "Host" || $request->accountType == "ServiceProvider")) {
+            return response()->json([
+                'status' => 'Account type not allowed'
+            ], 400);
+        }
+
         $user = new User($request->all());
         if(!$user->save()) {
             throw new HttpException(500);

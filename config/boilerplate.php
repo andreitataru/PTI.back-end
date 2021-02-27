@@ -11,14 +11,14 @@ return [
 
         // here you can specify some validation rules for your sign-in request
         'validation_rules' => [
-            'name' => 'required',
+            //'name' => 'required',
             'email' => 'required|email',
             'username' => 'required',
             'accountType' => 'required',
-            'birthDate' => 'required',
-            'bankAccountNumber' => 'required',
-            'cellphoneNumber' => 'required',
-            'password' => 'required',
+            //'birthDate' => 'required',
+            //'bankAccountNumber' => 'required',
+            //'cellphoneNumber' => 'required',
+            'password' => 'required'
         ]
     ],
 

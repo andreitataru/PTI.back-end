@@ -9,6 +9,7 @@ use App\Api\V1\Requests\LoginRequest;
 use Tymon\JWTAuth\Exceptions\JWTException;
 use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 use Auth;
+use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
@@ -31,4 +32,26 @@ class UserController extends Controller
     {
         return response()->json(Auth::guard()->user());
     }
+
+    public function updateUser(Request $request)
+    {
+        $user = Auth::user();
+
+        $user->name = $request->name;
+        $user->birthDate = $request->birthDate;
+        $user->bankAccountNumber = $request->bankAccountNumber;
+        $user->cellphoneNumber = $request->cellphoneNumber;
+
+        if(!$user->save()) {
+            throw new HttpException(500);
+        }
+        else {
+            return response()->json([
+                'status' => 'User Updated'
+            ], 200);
+        }
+
+
+    }
+
 }
